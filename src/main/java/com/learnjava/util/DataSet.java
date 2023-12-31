@@ -4,16 +4,13 @@ package com.learnjava.util;
 import com.learnjava.domain.checkout.Cart;
 import com.learnjava.domain.checkout.CartItem;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class DataSet {
 
-    public static List<String> lowerCaseAlphabetList = List.of("a", "b", "c", "a", "d", "e", "f", "e", "g", "h", "i");
+    public static List<String> lowerCaseAlphabetList = new ArrayList<>(Arrays.asList("a", "b", "c", "a", "d", "e", "f", "e", "g", "h", "i"));
 
     public static Cart createCart(int noOfItemsInCart) {
 
@@ -30,7 +27,7 @@ public class DataSet {
     }
 
     public static List<String> namesList() {
-        return List.of("Bob", "Jamie", "Jill", "Rick");
+        return new ArrayList<>(Arrays.asList("Bob", "Jamie", "Jill", "Rick"));
 
     }
 
